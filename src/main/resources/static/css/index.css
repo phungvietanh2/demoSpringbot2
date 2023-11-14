@@ -1,0 +1,20 @@
+/* Định dạng button "Xem thêm" */
+.xem-them-button {
+
+    padding: 10px 20px; /* Độ lớn của nút */
+    border: solid 2px black;
+    border-radius: 5px; /* Độ cong góc */
+    cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút */
+}
+
+/* Hover style - Định dạng khi di chuột qua nút */
+.xem-them-button:hover {
+    color: #fff; /* Màu chữ */
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* Điều chỉnh giới hạn chiều rộng tối đa trước khi xuất hiện ba dấu chấm */
+}

@@ -1,0 +1,37 @@
+body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: red;text-decoration: line-through}.product-image{width: 100%}.dot{height: 7px;width: 7px;margin-left: 6px;margin-right: 6px;margin-top: 3px;background-color: blue;border-radius: 50%;display: inline-block}.spec-1{color: #938787;font-size: 15px}h5{font-weight: 400}.para{font-size: 16px}
+/* styles.css */
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    flex: 1; /* Để ô nhập email mở rộng theo phần còn lại của khung */
+}
+
+/* styles.css */
+.tick-icon {
+    width: 30px;
+    height: 30px;
+    background-color: green; /* Màu xanh */
+    border-radius: 50%; /* Tạo hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.tick-icon::before {
+    content: '\2713'; /* Mã Unicode của biểu tượng "tick" (checkmark) */
+    color: white; /* Màu trắng cho biểu tượng */
+    font-size: 20px;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+    display: none; /* Ban đầu ẩn thông báo lỗi */
+}
+
+.error-message-show {
+    display: block; /* Hiển thị thông báo lỗi nếu có lỗi */
+}

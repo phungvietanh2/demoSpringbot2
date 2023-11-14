@@ -1,0 +1,79 @@
+#scrollableTable {
+    font-size: 15px;
+    height: 100%;
+    padding: 2px;
+    table-layout: fixed;
+    text-align: left;
+    width: auto;
+    overflow-x: auto;
+}
+
+#scrollableTable thead {
+    background-color: #C3E6CB;
+}
+
+#scrollableTable th {
+    border: 1px solid #CCC;
+    font-weight: 600;
+    padding: 2px;
+    text-align: left;
+}
+
+#scrollableTable tbody {
+    border-bottom: 1px solid #CCC;
+}
+
+.scrollTable tbody {
+    display: block;
+    max-height: 500px;
+    /* Scroll container height. */
+    overflow-y: auto;
+}
+
+#scrollableTable td {
+    border-bottom: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding-left: 2px;
+    width: 1%;
+    word-wrap: break-word;
+}
+
+#scrollableTable table tr:last-child {
+    border-bottom: none;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.excel-button {
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white; /* Màu chữ trên nút */
+    padding: 10px 20px; /* Kích thước nút */
+    text-align: center; /* Căn giữa nội dung */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+    display: inline-block; /* Hiển thị như một khối mà không chiếm toàn bộ chiều rộng của thẻ a */
+    border: 1px solid #4CAF50; /* Đường viền nút */
+    border-radius: 5px; /* Bo tròn viền nút */
+    cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút */
+}
+
+.excel-button:hover {
+    background-color: #45a049; /* Màu nền khi di chuột qua nút */
+}
+.state-cell {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container  .unpaid {
+    background-color: red;
+    color: white;
+}
+
+.container  .paid {
+    background-color: green;
+    color: white;
+}

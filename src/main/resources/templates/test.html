@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Hello Spring Security</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+</head>
+<body>
+<h1>Thông tin đơn hàng</h1>
+<form action="/payment/initiate" method="POST">
+    <label for="vnp_OrderInfo">Thông tin đơn hàng:</label>
+    <input type="text" name="vnp_OrderInfo" required><br>
+    <label for="amount">Số tiền:</label>
+    <input type="number" name="amount" required><br>
+    <label for="bankcode">Mã ngân hàng (nếu có):</label>
+    <input type="text" name="bankcode"><br>
+    <label for="language">Ngôn ngữ:</label>
+    <input type="text" name="language"><br>
+    <input type="submit" value="Thanh toán">
+</form>
+</body>
+</html>
